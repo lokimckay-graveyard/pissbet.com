@@ -1,0 +1,9 @@
+// Breakpoints
+// 300px - 600px = mobile
+// 600px - 992px = tablet
+$media-unsupported: 0px;
+$media-mobile: 300px;
+$media-tablet: 600px;
+$media-desktop: 992px;
+
+$pagePadding: 32px;

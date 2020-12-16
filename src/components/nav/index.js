@@ -4,12 +4,8 @@ import styles from "./nav.module.scss";
 const Nav = () => {
   return (
     <div className={styles.container}>
-      <div>
-        <Button label="Dashboard" styling="nav" />
-      </div>
-      <div>
-        <Button label="About" styling="nav" />
-      </div>
+      <Button styling="nav" label="Dashboard" href="/" />
+      <Button styling="nav" label="About" href="/about" />
     </div>
   );
 };

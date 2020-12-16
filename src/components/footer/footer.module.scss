@@ -1,0 +1,11 @@
+@use "src/styles/spacing";
+
+.container {
+  padding-left: spacing.$pagePadding;
+  padding-right: spacing.$pagePadding;
+  text-align: right;
+}
+
+.social {
+  margin-left: 16px;
+}

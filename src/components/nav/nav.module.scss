@@ -1,4 +1,12 @@
+@use "src/styles/spacing";
+
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 126px 126px;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: spacing.$pagePadding;
+  padding-right: spacing.$pagePadding;
 }

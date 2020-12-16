@@ -3,6 +3,7 @@ const Icon = ({
   fontSize,
   size,
   colour,
+  display = "flex",
   justify = "center",
   align = "center",
   className,
@@ -11,7 +12,7 @@ const Icon = ({
     <div
       className={className}
       style={{
-        display: "flex",
+        display,
         justifyContent: justify,
         alignItems: align,
         fontSize,

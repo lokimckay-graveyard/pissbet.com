@@ -1,0 +1,6 @@
+@use "src/styles/spacing";
+
+.main {
+  padding-left: spacing.$pagePadding;
+  padding-right: spacing.$pagePadding;
+}
