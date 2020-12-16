@@ -1,3 +1,19 @@
+@use "src/styles/colour";
+
 .title {
-  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  color: colour.$blue-900;
+}
+
+.pirate {
+  display: block;
+  margin: auto;
+}
+
+.container {
+  background-color: colour.$white;
+  padding: 32px;
+  margin-top: 32px;
 }

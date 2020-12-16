@@ -1,3 +1,4 @@
+import { pissbetDiscord, pissmas2 } from "../config";
 import Icon from "../components/icon";
 import Layout from "../components/layouts/page";
 import styles from "../styles/pages/About.module.scss";
@@ -11,10 +12,7 @@ const Home = () => {
           <p className={styles.description}>
             Pissbet is a <i>fake currency</i> bet tracker for the{" "}
             <i>non-profit</i> SSBU tournament{" "}
-            <a
-              href="https://smash.gg/tournament/pissmas-2/details"
-              className={styles.icon}
-            >
+            <a href={pissmas2} className={styles.icon}>
               {" "}
               Pissmas 2{" "}
               <Icon
@@ -36,7 +34,7 @@ const Home = () => {
               <i>must</i>
             </strong>{" "}
             join{" "}
-            <a href="https://discord.com/invite/p2pdbNc5d4">
+            <a href={pissbetDiscord}>
               the Pissbet discord{" "}
               <Icon
                 name="fas fa-external-link-alt"

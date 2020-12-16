@@ -3,7 +3,9 @@
 .container {
   padding-left: spacing.$pagePadding;
   padding-right: spacing.$pagePadding;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social {
