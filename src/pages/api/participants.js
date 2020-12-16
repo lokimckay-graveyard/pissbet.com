@@ -21,6 +21,7 @@ export default async (req, res) => {
     res.statusCode = 200;
     res.json(response);
   } catch (error) {
+    console.error(error);
     res.statusCode = 500;
     res.json({ message: "Internal server error" });
   }
