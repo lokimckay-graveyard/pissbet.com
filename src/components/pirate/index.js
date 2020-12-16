@@ -10,7 +10,7 @@ const Pirate = ({ data, error }) => {
         Yarr... Merry Pissmas!
         <ul>
           <li>
-            There be{" "}
+            Thar be{" "}
             {hasParticipants ? (
               <span className={styles.count}>{totalParticipants}</span>
             ) : (
@@ -18,8 +18,8 @@ const Pirate = ({ data, error }) => {
             )}{" "}
             punters {hasParticipants ? "aboard in total" : "about"}
           </li>
-          <li>Biggest win of X pisscoins by ?</li>
-          <li>Biggest loss of X pisscoins by ?</li>
+          <li>Biggest win o' X pisscoins by ?</li>
+          <li>Biggest loss o' X pisscoins by ?</li>
         </ul>
       </div>
     </div>
