@@ -1,0 +1,29 @@
+@use "src/styles/colour";
+
+.container {
+  color: colour.$white;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.pirate {
+  justify-self: flex-end;
+  max-width: 100%;
+  width: 128px;
+}
+
+.speech {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.speech > ul > li {
+  margin-bottom: 12px;
+}
+
+.count {
+  color: colour.$blue-300;
+  font-weight: bold;
+}

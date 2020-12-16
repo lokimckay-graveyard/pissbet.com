@@ -1,0 +1,45 @@
+@use "src/styles/colour";
+@use "src/styles/spacing";
+
+.container {
+  padding: 32px;
+  background-color: colour.$white;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: colour.$blue-900;
+  margin-top: 0;
+}
+
+.grid {
+  column-gap: 2px;
+}
+
+.icon {
+  margin-right: 8px;
+  display: inline;
+}
+
+@media only screen and (min-width: spacing.$media-desktop) {
+  .grid {
+    column-count: 5;
+  }
+}
+
+@media only screen and (min-width: spacing.$media-tablet) and (max-width: spacing.$media-desktop) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: spacing.$media-tablet) {
+  .grid {
+    column-count: 1;
+  }
+}

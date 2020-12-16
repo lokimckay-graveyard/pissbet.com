@@ -1,0 +1,15 @@
+@use "src/styles/colour";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 30px;
+}
+
+.container:nth-child(even) {
+  background-color: colour.$blue-300;
+}
