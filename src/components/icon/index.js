@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Icon = ({
   name,
   fontSize,
@@ -21,7 +23,7 @@ const Icon = ({
         minHeight: size,
       }}
     >
-      <i aria-hidden className={name} />
+      <FontAwesomeIcon icon={name} />
     </div>
   );
 };

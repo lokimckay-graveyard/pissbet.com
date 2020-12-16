@@ -12,7 +12,7 @@ const Footer = () => {
           <Button
             label="Pissbet Discord"
             href={pissbetDiscord}
-            icon={{ name: "fab fa-discord", fontSize: "16px", size: "16px" }}
+            icon={{ name: ["fab", "discord"], fontSize: "16px", size: "16px" }}
             styling="link"
             className={styles.social}
           />
@@ -21,14 +21,18 @@ const Footer = () => {
           <Button
             label="@sneyed"
             href="https://twitter.com/sneyed"
-            icon={{ name: "fab fa-twitter", fontSize: "16px", size: "16px" }}
+            icon={{
+              name: ["fab", "twitter"],
+              fontSize: "16px",
+              size: "16px",
+            }}
             styling="link"
             className={styles.social}
           />
           <Button
             label="@nairiell"
             href="https://twitter.com/nairiell"
-            icon={{ name: "fab fa-twitter", fontSize: "16px", size: "16px" }}
+            icon={{ name: ["fab", "twitter"], fontSize: "16px", size: "16px" }}
             styling="link"
             className={styles.social}
           />

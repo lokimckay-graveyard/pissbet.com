@@ -1,4 +1,3 @@
-import Icon from "../components/icon";
 import Layout from "../components/layouts/page";
 import styles from "../styles/pages/Home.module.scss";
 

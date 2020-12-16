@@ -16,7 +16,7 @@ const Home = () => {
               {" "}
               Pissmas 2{" "}
               <Icon
-                name="fas fa-external-link-alt"
+                name="external-link-alt"
                 display="inline"
                 size="12px"
                 fontSize="12px"
@@ -37,7 +37,7 @@ const Home = () => {
             <a href={pissbetDiscord}>
               the Pissbet discord{" "}
               <Icon
-                name="fas fa-external-link-alt"
+                name="external-link-alt"
                 display="inline"
                 size="12px"
                 fontSize="12px"
