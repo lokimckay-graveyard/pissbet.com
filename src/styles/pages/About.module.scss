@@ -23,3 +23,7 @@
 .description > a {
   font-weight: bold;
 }
+
+.description > a:hover {
+  border-bottom: 1px dotted;
+}
