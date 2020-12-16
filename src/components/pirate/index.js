@@ -39,12 +39,12 @@ const Pirate = ({ data, error }) => {
           </li>
           <li>
             {oW?.username} 'as <span style={green}>gained</span> the most
-            pisscoin overall: <span style={green}>{oW?.amount}</span>{" "}
+            pisscoin overall: <span style={green}>+{oW?.amount}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
           <li>
             {oL?.username} 'as <span style={red}>lost</span> the most pisscoin
-            overall: <span style={red}>{oL?.amount}</span>{" "}
+            overall: <span style={red}>-{oL?.amount}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
           <li>
