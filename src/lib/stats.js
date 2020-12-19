@@ -1,3 +1,5 @@
+import { isEmptyObj } from "./array";
+
 const didWinBet = ({ match, bet }) => {
   const { playerNumber } = bet;
   const { player1Id, player2Id, winningPlayerId } = match;
@@ -55,7 +57,8 @@ export const getStats = ({ allMatches, allBets, participants }) => {
   const { winnings, losses, largestWin, largestLoss } =
     getWinningsAndLosses({ allMatches, allBets, participants }) || {};
 
-  if (!winnings || !losses) return;
+  if (!winnings || !losses || isEmptyObj(winnings) || isEmptyObj(losses))
+    return;
 
   const overallWinnerEntry = findLargestAmount(winnings);
   const overallLoserEntry = findLargestAmount(losses);
