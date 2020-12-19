@@ -38,23 +38,26 @@ const Pirate = ({ data, error }) => {
             punters {hasParticipants ? "aboard in total" : "about"}
           </li>
           <li>
-            {oW?.username} 'as <span style={green}>gained</span> the most
-            pisscoin overall: <span style={green}>+{oW?.amount}</span>{" "}
+            {oW?.username || "Nobody"} 'as <span style={green}>gained</span> the
+            most pisscoin overall:{" "}
+            <span style={green}>+{oW?.amount || "0"}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
           <li>
-            {oL?.username} 'as <span style={red}>lost</span> the most pisscoin
-            overall: <span style={red}>-{oL?.amount}</span>{" "}
+            {oL?.username || "Nobody"} 'as <span style={red}>lost</span> the
+            most pisscoin overall: <span style={red}>-{oL?.amount || "0"}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
           <li>
-            {lW?.username} 'as the biggest <span style={green}>haul</span> in
-            one sittin': <span style={green}>+{lW?.amount}</span>{" "}
+            {lW?.username || "Nobody"} 'as the biggest{" "}
+            <span style={green}>haul</span> in one sittin':{" "}
+            <span style={green}>+{lW?.amount || "0"}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
           <li>
-            {lL?.username} 'as the biggest <span style={red}>blunder</span> in
-            one sittin': <span style={red}>-{lL?.amount}</span>{" "}
+            {lL?.username || "Nobody"} 'as the biggest{" "}
+            <span style={red}>blunder</span> in one sittin':{" "}
+            <span style={red}>-{lL?.amount || "0"}</span>{" "}
             <Icon name="coins" display="inline" colour="#FFCC00" />
           </li>
         </ul>
