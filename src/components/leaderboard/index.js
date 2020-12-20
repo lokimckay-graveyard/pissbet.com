@@ -16,7 +16,9 @@ const Leaderboard = ({ perPage = 30, setPerPage, data, error }) => {
   const { totalParticipants, participants } = data || {};
   const hasParticipants = totalParticipants && totalParticipants > 0;
   const emptyRows =
-    totalParticipants < perPage && spawnEmptyRows(perPage - totalParticipants);
+    totalParticipants < perPage
+      ? spawnEmptyRows(perPage - totalParticipants)
+      : [];
 
   return error ? (
     <pre>{JSON.stringify(error, null, 2)}</pre>
