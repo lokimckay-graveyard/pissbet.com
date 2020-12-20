@@ -3,10 +3,12 @@ import { isEmptyObj } from "./array";
 const didWinBet = ({ match, bet }) => {
   const { playerNumber } = bet;
   const { player1Id, player2Id, winningPlayerId } = match;
-  const betOnPlayerNumber =
-    player1Id == playerNumber ? 1 : player2Id == playerNumber ? 2 : null;
-  if (!betOnPlayerNumber) return false;
-  return winningPlayerId == betOnPlayerNumber;
+  if (!winningPlayerId) return;
+  const betOnPlayerId =
+    playerNumber === 1 ? player1Id : playerNumber === 2 ? player2Id : null;
+
+  if (!betOnPlayerId) return false;
+  return winningPlayerId == betOnPlayerId;
 };
 
 const findLargestAmount = (object) => {
