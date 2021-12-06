@@ -77,3 +77,35 @@ export const getStats = ({ allMatches, allBets, participants }) => {
 
   return { overallWinner, overallLoser, largestWin, largestLoss };
 };
+
+export const getPlayerIdFromTag = ({ tag, allPlayers }) => {
+  if (!allPlayers || !tag) return;
+  const foundPlayer = allPlayers.find(
+    ({ tag: _tag }) => _tag.toLowerCase() === tag.toLowerCase()
+  );
+  return foundPlayer ? foundPlayer.id : undefined;
+};
+
+export const getBackingsByPlayerId = ({ allBets, allMatches }) => {
+  return allBets.reduce((acc, bet) => {
+    const match = allMatches.find((match) => match.id === bet.matchId);
+    const concluded = match.winningPlayerId;
+    if (concluded) return acc;
+    const playerId =
+      bet.playerNumber === 1
+        ? match.player1Id
+        : bet.playerNumber === 2
+        ? match.player2Id
+        : null;
+    return {
+      ...acc,
+      [playerId]: (acc[playerId] || 0) + bet.volume,
+    };
+  }, {});
+};
+
+export const getBacking = ({ allBets, allMatches, playerId }) => {
+  if (!allBets || !allMatches || !playerId) return;
+  const allBackings = getBackingsByPlayerId({ allBets, allMatches });
+  return allBackings[playerId] || 0;
+};

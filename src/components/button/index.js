@@ -15,6 +15,7 @@ const Button = ({
   iconClass,
   disabled,
   external,
+  ...props
 }) => {
   const LinkWrapper = ({ children }) => {
     return href && !disabled ? (
@@ -51,6 +52,7 @@ const Button = ({
         ])}
         style={style}
         disabled={disabled}
+        {...props}
       >
         {icon && position === "left" && renderedIcon}
         {label}

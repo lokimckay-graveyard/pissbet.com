@@ -1,0 +1,58 @@
+@use "src/styles/colour";
+
+.container {
+  padding: 32px;
+  margin-top: 32px;
+  background-color: colour.$white;
+
+  h3 {
+    color: colour.$blue-900;
+  }
+}
+
+.title {
+  color: colour.$blue-900;
+  margin-top: 0;
+}
+
+.icon {
+  display: inline;
+  width: auto;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.forms {
+  display: grid;
+  row-gap: 32px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 200px 100px auto;
+  row-gap: 32px;
+
+  input {
+    display: inline-block;
+  }
+}
+
+.backing {
+  display: grid;
+  align-items: center;
+  margin-left: 32px;
+
+  .coins {
+    font-size: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 8px;
+  }
+}
+
+.loading {
+  height: 25px;
+}
