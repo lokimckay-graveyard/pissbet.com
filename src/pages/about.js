@@ -14,7 +14,7 @@ const Home = () => {
             <i>non-profit</i> SSBU tournament{" "}
             <a href={pissmas2} className={styles.icon}>
               {" "}
-              Pissmas 2{" "}
+              Pissmas 2.5{" "}
               <Icon
                 name="external-link-alt"
                 display="inline"
@@ -27,7 +27,7 @@ const Home = () => {
         <div className={styles.section}>
           <h2 className={styles.title}>How can I participate?</h2>
           <p className={styles.description}>
-            Registration for Pissmas 2 on smash.gg is now closed.
+            Registration for Pissmas 2.5 on smash.gg is now closed.
             <br />
             If you have already registered, you{" "}
             <strong>

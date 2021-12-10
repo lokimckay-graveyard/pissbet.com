@@ -32,23 +32,12 @@ export const BETS_AND_MATCHES_QUERY = gql`
 
 export const BACKING_QUERY = gql`
   {
-    allPlayers {
+    currentOpenMatch {
       id
-      tag
-    }
-    allBets {
-      id
-      participantId: participant_id
-      matchId: match_id
-      playerNumber: player_number
-      volume
-    }
-    allMatches {
-      id
-      player1Id: player_1_id
-      player2Id: player_2_id
-      bettingOpen: betting_open
-      winningPlayerId: winning_player_id
+      player1Tag: player_1_tag
+      player1BetTotal: player_1_bet_total
+      player2Tag: player_2_tag
+      player2BetTotal: player_2_bet_total
     }
   }
 `;
