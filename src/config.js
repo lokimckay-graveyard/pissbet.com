@@ -1,3 +1,4 @@
-export const pissbetDiscord = "https://discord.com/invite/p2pdbNc5d4";
-export const pissmas2 = "https://smash.gg/tournament/pissmas-2/details";
-export const refreshInterval = 3000;
+export const pissbetDiscord = process.env.PISSBET_DISCORD_INVITE || '';
+export const pissmasStartGG = process.env.PISSMAS_START_GG || '';
+export const refreshInterval = process.env.REFRESH_INTERVAL || 3000;
+export const pissmasNum = process.env.PISSMAS_NUM || 4;

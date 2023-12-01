@@ -3,7 +3,7 @@ import styles from "./row.module.scss";
 
 const Row = ({ position, participant }) => {
   const { username, balance } = participant || {};
-  const validParticipant = username && balance;
+  const validParticipant = username && !!balance;
   return (
     <div
       className={styles.container}

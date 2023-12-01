@@ -1,4 +1,4 @@
-import { pissbetDiscord, pissmas2 } from "../config";
+import { pissbetDiscord, pissmasStartGG, pissmasNum } from "../config";
 import Icon from "../components/icon";
 import Layout from "../components/layouts/page";
 import styles from "../styles/pages/About.module.scss";
@@ -12,9 +12,9 @@ const Home = () => {
           <p className={styles.description}>
             Pissbet is a <i>fake currency</i> bet tracker for the{" "}
             <i>non-profit</i> SSBU tournament{" "}
-            <a href={pissmas2} className={styles.icon}>
+            <a href={pissmasStartGG} className={styles.icon}>
               {" "}
-              Pissmas 2.5{" "}
+              Pissmas {pissmasNum}{" "}
               <Icon
                 name="external-link-alt"
                 display="inline"
@@ -27,7 +27,7 @@ const Home = () => {
         <div className={styles.section}>
           <h2 className={styles.title}>How can I participate?</h2>
           <p className={styles.description}>
-            Registration for Pissmas 2.5 on smash.gg is now closed.
+            Registration for Pissmas {pissmasNum} on start.gg is now closed.
             <br />
             If you have already registered, you{" "}
             <strong>
